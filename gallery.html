@@ -1,0 +1,247 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>gallerypage</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+ <!--================================================================================================================--> 
+ <style>
+*{
+    box-sizing: border-box;
+}
+
+     .navbar {
+      margin-bottom: 0;
+      border-radius: 0;
+    }
+    
+    /* Set height of the grid so .sidenav can be 100% (adjust as needed) */
+    .row.content {height: 450px}
+    
+    /* Set gray background color and 100% height */
+    .sidenav {
+      padding-top: 20px;
+      background-color: #f1f1f1;
+      height: 100%;
+    }
+    
+    /* Set black background color, white text and some padding */
+    footer {
+      background-color: #555;
+      color: white;
+      padding: 15px;
+    }
+    
+    /* On small screens, set height to 'auto' for sidenav and grid */
+    @media screen and (max-width: 767px) {
+      .sidenav {
+        height: auto;
+        padding: 15px;
+      }
+      .row.content {height:auto;} 
+    }
+
+.mygallery{
+    text-align: center;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen;
+    text-decoration-color: peru;
+}
+
+.jumbotron
+{   
+padding-top: 0px;
+padding-bottom:0px;
+background-image:url("bgGrey.jpg");
+background-size: cover;
+height:100px;
+ }
+
+ .jumbotron1
+{   
+padding-top: 0px;
+padding-bottom:0px;
+background-image:url("bgGrey.jpg");
+background-size: cover;
+height: 1700px;
+ }
+
+.content{
+    padding: 10px;
+}
+
+.row{
+    margin:8px-16px;
+    
+}
+/*add padding between each column*/
+.row,
+.row > .column{
+    padding:8px
+  
+}
+
+/*create four equal columns that floats next to each other*/
+.column{
+float:left;
+width:25%;
+}
+
+/*clear float after rows*/
+.row:after{
+    content:"";
+    display:table;
+    clear:both;
+}
+
+/*Content*/
+.content{
+    padding:10px;
+    background-color:black
+}
+
+/* Responsive layout - makes the two columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 600px) {
+  .column {
+    width: 100%;
+  }
+}
+
+ </style>
+</head>
+<!--==========================================================================================================-->
+<!--===========================================================================================================-->
+
+<body>
+    <nav class="navbar navbar-inverse">
+        <div class="container-fluid">
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a class="navbar-band" href="#">Logo</a>
+            </div>
+            <div class="collapse navbar-collapse" id=myNavbar>
+                <ol class="nav navbar-nav">
+                    <li><a href="home.html">HOME</a></li>
+                    <li><a href="about.html">ABOUT</a></li>
+                    <li class="active"><a href="gallery.html">GALLERY</a></li>
+                    <li><a href="portfolio.html">PORTFOLIO</a></li>
+                    <li><a href="contact.html">CONTACT</a></li>
+                </ol>
+                <ul class="nav navbar-nav navbar-right">
+                    <li><a href="#"><span class="glyphicon glyphicon-log-in"></span>Login</a></li>
+                </ul>
+            </div>
+        </div>
+     </nav>
+
+<!--==============================================================================================-->     
+
+<div class="container-fluid">
+    <div class="jumbotron">
+
+        <h1 class="mygallery">MY GALLERY</h1>
+
+    </div>
+</div>
+
+<!--Gallery Grid-->
+    <div class="jumbotron1">
+        <hr>
+       
+
+    <div class="row">
+
+        <div class="column">
+        <div class="content">
+            <img src="cal1.jpg" style="width:100%"alt="one">
+        </div>
+        </div>
+
+        <div class="column">
+        <div class="content">
+            <img src="cal2.jpg"  style="width:100%"alt="two">
+        </div>
+        </div>
+
+        <div class="column">
+        <div class="content">
+            <img src="cal3.jpg" style="width:100%"alt="one">
+        </div>
+        </div>
+    
+        <div class="column">
+        <div class="content">
+            <img src="cal4.jpg" style="width:100%"alt="two">
+        </div>
+        </div>
+
+        <div class="column">
+        <div class="content">
+            <img src="cal5.jpg"  style="width:100%"alt="one">
+        </div>
+        </div>
+        
+        <div class="column">
+         <div class="content">
+            <img src="cal6.jpg" style="width:100%"alt="two">
+         </div>
+        </div>
+
+        <div class="column">
+        <div class="content">
+            <img src="cal7.jpg" style="width:100%"alt="one">
+        </div>
+        </div>
+            
+        <div class="column">
+        <div class="content">
+            <img src="cal8.jpg"  style="width:100%"alt="two">
+        </div>
+        </div>
+
+        <div class="column">
+        <div class="content">
+            <img src="cal9.jpg"  style="width:100%"alt="one">
+        </div>
+        </div>
+                
+        <div class="column">
+        <div class="content">
+            <img src="cal10.jpg"  style="width:100%"alt="two">
+        </div>
+        </div>
+
+        <div class="column">
+        <div class="content">
+            <img src="cal11.jpg"  style="width:100%"alt="one">
+        </div> 
+        </div>
+                    
+        <div class="column">
+        <div class="content">
+            <img src="cal12.jpg"  style="width:100%"alt="two">
+        </div>
+        </div>   
+       
+    </div>
+
+
+
+    <div class="card text-center" style="width:18rem;">
+        <img class="card-body" src="cal1.jpg" alt="inspirational">
+        <div class="card-body">
+            <h5 class="card-title">Card Title</h5>
+            <p class="card-text">Some quick example text to build here</p>
+            <a href="#" class="btn btn-primary">Go somewhere</a>
+        </div>
+    </div>
+
+    
+</body>
+</html>
