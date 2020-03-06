@@ -1,0 +1,166 @@
+ /* ALL FOR HOMEPAGE */
+ .carousel-inner img{
+    width: 100%;
+    height: 100%;
+}
+
+.text-center1{
+  background-color: rgb(41, 40, 40);
+  color: white;
+
+}
+
+.container-center .btnR{
+    position: absolute;
+    top:50%;
+    left:50%;
+    transform:translate(-50%, -50%);
+    -ms-transform:translate(-50%,-50%);
+    font-size:30px;
+    /*padding:12px 24px;*/
+    cursor:pointer;
+    text-align:center;
+}
+.container-center .btnR:hover{
+    background-color: rgb(148, 145, 148);
+}
+
+
+
+
+
+
+
+
+/* ALL FOR ABOUTPAGE */
+body,html{
+    height: 100%;
+    margin:0;
+}
+
+.bg{
+  background-image: url("aboutbackground.jpg");
+  height:75%;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.me{
+  width: 20%;
+  height: 100%;
+}
+
+/* ALL FOR GALLERY */
+*{
+    box-sizing: border-box;
+}
+
+     .navbar {
+      margin-bottom: 0;
+      border-radius: 0;
+    }
+    
+    /* Set height of the grid so .sidenav can be 100% (adjust as needed) */
+    .row.content {height: 450px}
+    
+    /* Set gray background color and 100% height */
+    .sidenav {
+      padding-top: 20px;
+      background-color: #f1f1f1;
+      height: 100%;
+    }
+    
+    /* Set black background color, white text and some padding */
+    footer {
+      background-color: #555;
+      color: white;
+      padding: 15px;
+    }
+    
+    /* On small screens, set height to 'auto' for sidenav and grid */
+    @media screen and (max-width: 767px) {
+      .sidenav {
+        height: auto;
+        padding: 15px;
+      }
+      .row.content {height:auto;} 
+    }
+
+.mygallery{
+    text-align: center;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen;
+    text-decoration-color: peru;
+}
+
+.jumbotron
+{   
+padding-top: 0px;
+padding-bottom:0px;
+background-image:url("bgGrey.jpg");
+background-size: cover;
+height:100px;
+ }
+
+ .jumbotron1
+{   
+padding-top: 0px;
+padding-bottom:0px;
+background-image:url("bgGrey.jpg");
+background-size: cover;
+height: 1700px;
+ }
+
+.content{
+    padding: 10px;
+}
+
+.row{
+    margin:8px-16px;
+    
+}
+/*add padding between each column*/
+.row,
+.row > .column{
+    padding:8px
+  
+}
+
+/*create four equal columns that floats next to each other*/
+.column{
+float:left;
+width:25%;
+}
+
+/*clear float after rows*/
+.row:after{
+    content:"";
+    display:table;
+    clear:both;
+}
+
+/*Content*/
+.content{
+    padding:10px;
+    background-color:black
+}
+
+/* Responsive layout - makes the two columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 600px) {
+  .column {
+    width: 100%;
+  }
+}
+
+
+/*ALL FOR PORTFOLIO */
+
+
+
+
+
+
+
+
+
+/*ALL FOR CONTACT*/
