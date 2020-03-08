@@ -9,8 +9,6 @@
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script>
- <!--================================================================================================================--> 
-
 </head>
 
 <body>
@@ -39,133 +37,144 @@
 
 <!--==============================================================================================-->     
 
-<div id="demo" class="carousel slide" data-ride="carousel">
+<!--GALLERY WITH SLIDES AND CAPTION-->
 
-  <!-- Indicators -->
+<!--Carousel Wrapper-->
+<div id="carousel-example-2" class="carousel slide carousel-fade z-depth-1-half" data-ride="carousel">
+  <!--Indicators-->
   <ol class="carousel-indicators">
-    <li data-target="#demo" data-slide-to="0" class="active"></li>
-    <li data-target="#demo" data-slide-to="1"></li>
-    <li data-target="#demo" data-slide-to="2"></li>
-    <li data-target="#demo" data-slide-to="3"></li>
-    <li data-target="#demo" data-slide-to="4"></li>
-    <li data-target="#demo" data-slide-to="5"></li>
-    <li data-target="#demo" data-slide-to="6"></li>
-    <li data-target="#demo" data-slide-to="7"></li>
-    <li data-target="#demo" data-slide-to="8"></li>
-    <li data-target="#demo" data-slide-to="9"></li>
-    <li data-target="#demo" data-slide-to="10"></li>
-    <li data-target="#demo" data-slide-to="11"></li>
-    <li data-target="#demo" data-slide-to="12"></li>
-    <li data-target="#demo" data-slide-to="13"></li>
-    <li data-target="#demo" data-slide-to="14"></li>
-    <li data-target="#demo" data-slide-to="15"></li>
-    <li data-target="#demo" data-slide-to="16"></li>
-    <li data-target="#demo" data-slide-to="17"></li>
-    <li data-target="#demo" data-slide-to="18"></li>
-    <li data-target="#demo" data-slide-to="19"></li>
-    <li data-target="#demo" data-slide-to="20"></li>
-    <li data-target="#demo" data-slide-to="21"></li>
-    <li data-target="#demo" data-slide-to="22"></li>
-    <li data-target="#demo" data-slide-to="23"></li>
-    <li data-target="#demo" data-slide-to="24"></li>
-    <li data-target="#demo" data-slide-to="25"></li>
+    <li data-target="#carousel-example-2" data-slide-to="0" class="active"></li>
+    <li data-target="#carousel-example-2" data-slide-to="1"></li>
+    <li data-target="#carousel-example-2" data-slide-to="2"></li>
   </ol>
-  
-  <!-- The slideshow -->
-  <div class="carousel-inner">
+  <!--/.Indicators-->
+  <!--Slides-->
+  <div class="carousel-inner" role="listbox">
     <div class="carousel-item active">
-      <img src="mat.jpg" width="1100" height="500">
+      <div class="view">
+        <img class="d-block w-100" src="kid3.jpg" alt="First slide">
+        <div class="mask rgba-black-light"></div>
+      </div>
+      <div class="carousel-caption">
+        <h3 class="h3-responsive">This is the first title</h3>
+        <p>First text</p>
+      </div>
     </div>
     <div class="carousel-item">
-      <img src="mark.jpg" width="1100" height="500">
+      <!--Mask color-->
+      <div class="view">
+        <img class="d-block w-100" src="women3.jpg" alt="Second slide">
+        <div class="mask rgba-black-light"></div>
+      </div>
+      <div class="carousel-caption">
+        <h3 class="h3-responsive">Thir is the second title</h3>
+        <p>Secondary text</p>
+      </div>
     </div>
     <div class="carousel-item">
-      <img src="luke.jpg" width="1100" height="500">
+      <!--Mask color-->
+      <div class="view">
+        <img class="d-block w-100" src="family3.jpg" alt="Third slide">
+        <div class="mask rgba-black-light"></div>
+      </div>
+      <div class="carousel-caption">
+        <h3 class="h3-responsive">This is the third title</h3>
+        <p>Third text</p>
+      </div>
     </div>
-    <div class="carousel-item">
-      <img src="john.jpg" width="1100" height="500">
-    </div>
-    <div class="carousel-item">
-      <img src="acts.jpg" width="1100" height="500">
-    </div>
-    <div class="carousel-item">
-      <img src="romans.jpg" width="1100" height="500">
-    </div>
-    <!--<div class="carousel-item">
-      <img src="1corin.jpg" width="1100" height="500">
-    </div>
-    <div class="carousel-item">
-      <img src="2corin.jpg" width="1100" height="500">
-    </div>
-    <div class="carousel-item">
-      <img src="galatians.jpg" width="1100" height="500">
-    </div>
-    <div class="carousel-item">
-      <img src="ephesians.jpg" width="1100" height="500">
-    </div>
-    <div class="carousel-item">
-      <img src="philipians.jpg" width="1100" height="500">
-    </div>
-    <div class="carousel-item">
-      <img src="colossians.jpg" width="1100" height="500">
-    </div>
-    <div class="carousel-item">
-      <img src="1thessa.jpg" width="1100" height="500">
-    </div>
-    <div class="carousel-item">
-      <img src="2thessa.jpg" width="1100" height="500">
-    </div>
-    <div class="carousel-item">
-      <img src="1timothy.jpg" width="1100" height="500">
-    </div>
-    <div class="carousel-item">
-      <img src="2timothy.jpg" width="1100" height="500">
-    </div>
-    <div class="carousel-item">
-      <img src="titus.jpg" width="1100" height="500">
-    </div>
-    <div class="carousel-item">
-      <img src="philemon.jpg" width="1100" height="500">
-    </div>
-    <div class="carousel-item">
-      <img src="hebrews.jpg" width="1100" height="500">
-    </div>
-    <div class="carousel-item">
-      <img src="james.jpg" width="1100" height="500">
-    </div>
-    <div class="carousel-item">
-      <img src="1peter.jpg" width="1100" height="500">
-    </div>
-    <div class="carousel-item">
-      <img src="2peter.jpg" width="1100" height="500">
-    </div>
-    <div class="carousel-item">
-      <img src="1john.jpg" width="1100" height="500">
-    </div>
-    <div class="carousel-item">
-      <img src="3john.jpg" width="1100" height="500">
-    </div>
-    <div class="carousel-item">
-      <img src="jude.jpg" width="1100" height="500">
-    </div>
-    <div class="carousel-item">
-      <img src="revelation.jpg" width="1100" height="500">
-    </div>-->
-</div>
-
-  <!-- Left and right controls -->
-  <a class="carousel-control-prev" href="#demo" role="button" data-slide="prev">
-    <span class="carousel-control-prev-icon"></span>
+  </div>
+  <!--/.Slides-->
+  <!--Controls-->
+  <a class="carousel-control-prev" href="#carousel-example-2" role="button" data-slide="prev">
+    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
     <span class="sr-only">Previous</span>
   </a>
-  <a class="carousel-control-next" href="#demo" role="button" data-slide="next">
-    <span class="carousel-control-next-icon"></span>
+  <a class="carousel-control-next" href="#carousel-example-2" role="button" data-slide="next">
+    <span class="carousel-control-next-icon" aria-hidden="true"></span>
     <span class="sr-only">Next</span>
-  </a>  
+  </a>
+  <!--/.Controls-->
+</div>
+<!--/.Carousel Wrapper-->
+<!--======================================================================================================================-->
+<!--======================================================================================================================-->
+<div class="container-fluid">
+    <div class="jumbotron">
+        <h1 class="mygallery"> A Gallery That Inspires You</h1>
+    </div>
 </div>
 
 
+<div class="Container ClickBtn">
+    <button class="ministrybtn active" onclick="filterSelection('all')">SHOW ALL</button>
+    <button class="ministrybtn" onclick="filterSelection('kids')"> KIDSMIN</button>
+    <button class="ministrybtn" onclick="filterSelection('women')"> WOMEN</button>
+    <button class="ministrybtn" onclick="filterSelection('men')"> MEN</button>
+    <button class="ministrybtn" onclick="filterSelection('families')"> FAMILIES</button>
+  </div>
 
+
+<div class="container ForImages">
+    <div class="col-md-4">
+    <div class="thumbnail">
+        <div class="filterDiv kids "><img src="kids.jpg" alt="one"></div>
+    </div>
+    </div>
+  
+  <div class="filterDiv women"><img src="women.jpg" alt="one"></div>
+  <div class="filterDiv men "><img src="men.jpg" alt="one"></div>
+  <div class="filterDiv families"><img src="families.jpg" alt=""></div>
+</div>
+
+
+<!-- JUST FOR THE MEAN TIME-->
+
+<script>
+    filterSelection("all")
+    function filterSelection(c) {
+      var x, i;
+      x = document.getElementsByClassName("filterDiv");
+      if (c == "all") c = "";
+      for (i = 0; i < x.length; i++) {
+        w3RemoveClass(x[i], "show");
+        if (x[i].className.indexOf(c) > -1) w3AddClass(x[i], "show");
+      }
+    }
+    
+    function w3AddClass(element, name) {
+      var i, arr1, arr2;
+      arr1 = element.className.split(" ");
+      arr2 = name.split(" ");
+      for (i = 0; i < arr2.length; i++) {
+        if (arr1.indexOf(arr2[i]) == -1) {element.className += " " + arr2[i];}
+      }
+    }
+    
+    function w3RemoveClass(element, name) {
+      var i, arr1, arr2;
+      arr1 = element.className.split(" ");
+      arr2 = name.split(" ");
+      for (i = 0; i < arr2.length; i++) {
+        while (arr1.indexOf(arr2[i]) > -1) {
+          arr1.splice(arr1.indexOf(arr2[i]), 1);     
+        }
+      }
+      element.className = arr1.join(" ");
+    }
+    
+    // Add active class to the current button (highlight it)
+    var btnContainer = document.getElementById("myBtnContainer");
+    var btns = btnContainer.getElementsByClassName("btn");
+    for (var i = 0; i < btns.length; i++) {
+      btns[i].addEventListener("click", function(){
+        var current = document.getElementsByClassName("active");
+        current[0].className = current[0].className.replace(" active", "");
+        this.className += " active";
+      });
+    }
+    </script>
+
+<!--
 <div class="container-fluid">
     <div class="jumbotron">
 
@@ -174,7 +183,7 @@
     </div>
 </div>
 
-    <div class="container">
+    <div class="containerForImages">
         <p>Through this simple gallery I hope that you feel important to our Lord.</p>
         
         <div class="row">
@@ -288,12 +297,12 @@
           </div>
 
         </div>
-      </div>
+      </div>-->
       
       <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
       <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
       <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
     
-             
+    
 </body>
 </html>
