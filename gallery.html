@@ -98,82 +98,136 @@
 <!--/.Carousel Wrapper-->
 <!--======================================================================================================================-->
 <!--======================================================================================================================-->
-<div class="container-fluid">
-    <div class="jumbotron">
-        <h1 class="mygallery"> A Gallery That Inspires You</h1>
-    </div>
+
+<h2>PORTFOLIO</h2>
+<div id="myBtnContainer">
+  <button class="btn active" onclick="filterSelection('all')"> Show all</button>
+  <button class="btn" onclick="filterSelection('nature')"> kids</button>
+  <button class="btn" onclick="filterSelection('cars')"> men</button>
+  <button class="btn" onclick="filterSelection('people')"> families</button>
 </div>
 
-
-<div class="Container ClickBtn">
-    <button class="ministrybtn active" onclick="filterSelection('all')">SHOW ALL</button>
-    <button class="ministrybtn" onclick="filterSelection('kids')"> KIDSMIN</button>
-    <button class="ministrybtn" onclick="filterSelection('women')"> WOMEN</button>
-    <button class="ministrybtn" onclick="filterSelection('men')"> MEN</button>
-    <button class="ministrybtn" onclick="filterSelection('families')"> FAMILIES</button>
+<!-- Portfolio Gallery Grid -->
+<div class="row">
+  <div class="column nature">
+    <div class="content">
+      <img src="kid1.jpg" alt="Mountains" style="width:100%">
+      <h4></h4>
+      <p></p>
+    </div>
+  </div>
+  <div class="column nature">
+    <div class="content">
+      <img src="kid2.jpg" alt="Lights" style="width:100%">
+      <h4></h4>
+      <p></p>
+    </div>
+  </div>
+  <div class="column nature">
+    <div class="content">
+      <img src="kid4.jpg" alt="Nature" style="width:100%">
+      <h4></h4>
+      <p></p>
+    </div>
   </div>
 
+  <div class="column cars">
+    <div class="content">
+      <img src="men1.jpg" alt="Car" style="width:100%">
+      <h4></h4>
+      <p></p>
+    </div>
+  </div>
+  <div class="column cars">
+    <div class="content">
+      <img src="men4.jpg" alt="Car" style="width:100%">
+      <h4></h4>
+      <p></p>
+    </div>
+  </div>
+  <div class="column cars">
+    <div class="content">
+      <img src="men5.jpg" alt="Car" style="width:100%">
+      <h4></h4>
+      <p></p>
+    </div>
+  </div>
 
-<div class="container ForImages">
-    <div class="col-md-4">
-    <div class="thumbnail">
-        <div class="filterDiv kids "><img src="kids.jpg" alt="one"></div>
+  <div class="column people">
+    <div class="content">
+      <img src="family1.jpg" alt="People" style="width:100%">
+      <h4></h4>
+      <p></p>
     </div>
+  </div>
+  <div class="column people">
+    <div class="content">
+      <img src="family2.jpg" alt="People" style="width:100%">
+      <h4></h4>
+      <p></p>
     </div>
-  
-  <div class="filterDiv women"><img src="women.jpg" alt="one"></div>
-  <div class="filterDiv men "><img src="men.jpg" alt="one"></div>
-  <div class="filterDiv families"><img src="families.jpg" alt=""></div>
+  </div>
+  <div class="column people">
+    <div class="content">
+      <img src="family4.jpg" alt="People" style="width:100%">
+      <h4></h4>
+      <p></p>
+    </div>
+  </div>
+<!-- END GRID -->
 </div>
 
-
-<!-- JUST FOR THE MEAN TIME-->
-
 <script>
-    filterSelection("all")
-    function filterSelection(c) {
-      var x, i;
-      x = document.getElementsByClassName("filterDiv");
-      if (c == "all") c = "";
-      for (i = 0; i < x.length; i++) {
-        w3RemoveClass(x[i], "show");
-        if (x[i].className.indexOf(c) > -1) w3AddClass(x[i], "show");
-      }
-    }
-    
-    function w3AddClass(element, name) {
-      var i, arr1, arr2;
-      arr1 = element.className.split(" ");
-      arr2 = name.split(" ");
-      for (i = 0; i < arr2.length; i++) {
-        if (arr1.indexOf(arr2[i]) == -1) {element.className += " " + arr2[i];}
-      }
-    }
-    
-    function w3RemoveClass(element, name) {
-      var i, arr1, arr2;
-      arr1 = element.className.split(" ");
-      arr2 = name.split(" ");
-      for (i = 0; i < arr2.length; i++) {
-        while (arr1.indexOf(arr2[i]) > -1) {
-          arr1.splice(arr1.indexOf(arr2[i]), 1);     
-        }
-      }
-      element.className = arr1.join(" ");
-    }
-    
-    // Add active class to the current button (highlight it)
-    var btnContainer = document.getElementById("myBtnContainer");
-    var btns = btnContainer.getElementsByClassName("btn");
-    for (var i = 0; i < btns.length; i++) {
-      btns[i].addEventListener("click", function(){
-        var current = document.getElementsByClassName("active");
-        current[0].className = current[0].className.replace(" active", "");
-        this.className += " active";
-      });
-    }
-    </script>
+filterSelection("all") // Execute the function and show all columns
+function filterSelection(c) {
+  var x, i;
+  x = document.getElementsByClassName("column");
+  if (c == "all") c = "";
+  // Add the "show" class (display:block) to the filtered elements, and remove the "show" class from the elements that are not selected
+  for (i = 0; i < x.length; i++) {
+    w3RemoveClass(x[i], "show");
+    if (x[i].className.indexOf(c) > -1) w3AddClass(x[i], "show");
+  }
+}
 
+// Show filtered elements
+function w3AddClass(element, name) {
+  var i, arr1, arr2;
+  arr1 = element.className.split(" ");
+  arr2 = name.split(" ");
+  for (i = 0; i < arr2.length; i++) {
+    if (arr1.indexOf(arr2[i]) == -1) {
+      element.className += " " + arr2[i];
+    }
+  }
+}
+
+// Hide elements that are not selected
+function w3RemoveClass(element, name) {
+  var i, arr1, arr2;
+  arr1 = element.className.split(" ");
+  arr2 = name.split(" ");
+  for (i = 0; i < arr2.length; i++) {
+    while (arr1.indexOf(arr2[i]) > -1) {
+      arr1.splice(arr1.indexOf(arr2[i]), 1);
+    }
+  }
+  element.className = arr1.join(" ");
+}
+
+// Add active class to the current button (highlight it)
+var btnContainer = document.getElementById("myBtnContainer");
+var btns = btnContainer.getElementsByClassName("btn");
+for (var i = 0; i < btns.length; i++) {
+  btns[i].addEventListener("click", function(){
+    var current = document.getElementsByClassName("active");
+    current[0].className = current[0].className.replace(" active", "");
+    this.className += " active";
+  });
+}
+</script>
+
+<!--==========================================================================================================-->
 <!--
 <div class="container-fluid">
     <div class="jumbotron">

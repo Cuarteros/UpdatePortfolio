@@ -1,0 +1,15 @@
+image{
+    text-align: right;
+}
+
+.Bgcolormain{
+    background-color:gray;
+    color:black;
+    height: 130px;
+}
+
+.Bgcolor{
+    background-color:gray;
+    color: black;
+    height: 50px;
+}
