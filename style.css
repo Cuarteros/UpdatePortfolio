@@ -203,7 +203,7 @@ h1 {
 
 .contactbg{
   background-image: url("contactbackground.jpg");
-  height:90%;
+  height:50%;
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -211,8 +211,7 @@ h1 {
 
 .contactMe{
   text-align: center;
-  font-size: 120px;
-  background-size: 100%;
+  font-size: 70px;
   color: white;
 }
 
@@ -220,7 +219,9 @@ h1 {
   background: transparent;
 }
 
-
+.row{
+  text-align: center;
+}
 
 .wrap{
   background: transparent;

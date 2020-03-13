@@ -1,3 +1,6 @@
+/*===================R E S U M E E=============================================*/
+
+
 image{
     text-align: right;
 }
@@ -13,3 +16,26 @@ image{
     color: black;
     height: 50px;
 }
+.p{
+    text-align: right;
+}
+
+/*=========================A P P L I C A T I O N===================================*/
+
+.Bgcolormain2{
+    background-color:gray;
+    height: 130px;
+}
+
+#main{
+    color:black;
+    font-size: 50px;
+
+}
+
+#submain{
+    color:black;
+    height: 130px;
+    font-size: 20px;
+}
+
