@@ -35,7 +35,45 @@
 }
 
 
+.flip-card {
+  background-color: transparent;
+  width: 420px;
+  height: 300px;
+  perspective: 1000px;
+}
 
+.flip-card-inner {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  transition: transform 0.6s;
+  transform-style: preserve-3d;
+  box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+}
+
+.flip-card:hover .flip-card-inner {
+  transform: rotateY(180deg);
+}
+
+.flip-card-front, .flip-card-back {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  -webkit-backface-visibility: hidden;
+  backface-visibility: hidden;
+}
+
+.flip-card-front {
+  background-color: #bbb;
+  color: black;
+}
+
+.flip-card-back {
+  background-color: #2980b9;
+  color: white;
+  transform: rotateY(180deg);
+}
 
 
 
@@ -241,31 +279,47 @@ h1 {
 
 
 
-.fa {
-  padding: 20px;
-  font-size: 30px;
-  width: 30px;
+/*-----------SOCIAL MEDIA--------------------------------------------*/
+.icon-bar {
+  position: fixed;
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+  -ms-transform: translateY(-50%);
+  transform: translateY(-50%);
+}
+
+/* Style the icon bar links */
+.icon-bar a {
+  display: block;
   text-align: center;
-  text-decoration: none;
-  margin: 5px 2px;
-  border-radius: 50%;
+  padding: 16px;
+  transition: all 0.3s ease;
+  color: white;
+  font-size: 20px;
 }
 
-.fa:hover {
-    opacity: 0.7;
+/* Style the social media icons with color, if you want */
+.icon-bar a:hover {
+  background-color: #000;
 }
 
-.fa-facebook {
+.facebook {
   background: #3B5998;
   color: white;
 }
 
-.fa-twitter {
-  background: #55ACEE;
+
+.youtube {
+  background: #bb0000;
   color: white;
 }
 
-.fa-google {
-  background: #dd4b39;
-  color: white;
+
+
+.panel-transparent .panel-heading{
+  background: rgba(122, 130, 136, 0.2)!important;
+}
+
+.panel-transparent .panel-body{
+  background: rgba(46, 51, 56, 0.2)!important;
 }
